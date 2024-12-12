@@ -142,12 +142,9 @@ header ul li a:hover::after {
 .header-logo {
   vertical-align: middle;
   filter: invert(1) brightness(2);
-  width: 20%; /* Increase the width */
+  width: 100%;
+  max-width: 150px; /* Adjusted to fit better on mobile */
   height: auto;
-}
-
-.header-h1 {
-  margin-top: 80px;
 }
 
 /* Social Icons */
@@ -189,44 +186,44 @@ header ul li a:hover::after {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  .logo-container {
-    text-align: center;
-    padding: 10px 0;
-  }
+    .logo-container {
+        text-align: center;
+        padding: 10px 0;
+    }
 
-  .header-logo {
-    width: auto;
-    max-width: 80%;
-    height: auto;
-  }
+    .header-logo {
+        width: 70%;  /* Adjusted to make smaller on mobile */
+        height: auto;
+    }
 
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-  nav ul li {
-    margin: 5px 0;
-  }
+    nav ul li {
+        margin: 5px 0;
+    }
 }
 
 @media (min-width: 769px) {
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
 
-  nav ul {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
 
-  nav ul li {
-    margin: 0 10px;
-  }
+    nav ul li {
+        margin: 0 10px;
+    }
 }
+
