@@ -42,7 +42,7 @@ function App() {
                     <img src="/spectre.png" alt="Spectre Logo" className="header-logo" />
                 </div>
                 <nav>
-                    <ul>
+                    <ul className="nav-links">
                         <li><a href="#hero">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#achievements">Achievements</a></li>
