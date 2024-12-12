@@ -142,7 +142,7 @@ header ul li a:hover::after {
 .header-logo {
   vertical-align: middle;
   filter: invert(1) brightness(2);
-  max-width: 200px; /* Adjust to fit better on mobile */
+  max-width: 150px; /* Adjust to fit better on mobile */
   height: auto;
 }
 
