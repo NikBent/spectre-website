@@ -142,8 +142,7 @@ header ul li a:hover::after {
 .header-logo {
   vertical-align: middle;
   filter: invert(1) brightness(2);
-  width: 100%;
-  max-width: 150px; /* Adjusted to fit better on mobile */
+  max-width: 200px; /* Adjust to fit better on mobile */
   height: auto;
 }
 
@@ -163,6 +162,11 @@ header ul li a:hover::after {
 .social-icons a:hover {
   color: #fdbb2d;
   transform: scale(1.2);
+}
+
+.social-icons img {
+  width: 24px; /* Adjust to fit better */
+  height: 24px; /* Adjust to fit better */
 }
 
 /* Hero Section */
@@ -192,7 +196,7 @@ header ul li a:hover::after {
     }
 
     .header-logo {
-        width: 70%;  /* Adjusted to make smaller on mobile */
+        width: 50%;  /* Adjusted to fit better on mobile */
         height: auto;
     }
 
@@ -226,4 +230,3 @@ header ul li a:hover::after {
         margin: 0 10px;
     }
 }
-
