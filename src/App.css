@@ -6,7 +6,6 @@ header {
   height: 80px; /* Ensure this matches the scroll-padding-top value */
 }
 
-
 /* Section Styling */
 section {
   padding: 6rem 2rem;
@@ -144,7 +143,6 @@ header ul li a:hover::after {
   vertical-align: middle;
   filter: invert(1) brightness(2);
   width: 20%; /* Increase the width */
-  margin-top: 60px;
   height: auto;
 }
 
@@ -189,4 +187,46 @@ header ul li a:hover::after {
   animation: slideIn 1s ease-out;
 }
 
-/* Add all other styles from your original CSS */
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .logo-container {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .header-logo {
+    width: auto;
+    max-width: 80%;
+    height: auto;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+}
