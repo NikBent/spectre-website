@@ -87,7 +87,7 @@ function App() {
 
             {/* Embed Instagram Posts Below About Us Section */}
             <section id="instagram">
-                <h2>What to Expect</h2>
+                <h2>What you will learn!</h2>
                 <div className="instagram-posts">
                     <blockquote className="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C57MT3LS7Tn/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
                     <blockquote className="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C7RSAWEyfTs/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
