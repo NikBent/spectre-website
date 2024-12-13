@@ -69,7 +69,7 @@ function App() {
             {/* Hero Section with Video Background */}
             <section id="hero" className="hero">
                 <video autoPlay loop muted className="background-video">
-                    <source src="C:/Users/alexa/Downloads/BG.mp4" type="video/mp4" />
+                    <source src="/BG.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <div className="logo-overlay">
