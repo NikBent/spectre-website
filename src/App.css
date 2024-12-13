@@ -62,12 +62,13 @@ section {
 
 .achievement h3 {
   margin: 1rem 0 0.5rem;
-  color: #fdbb2d;
+  color: #fdbb2d; /* Title color */
 }
 
 .achievement p {
   font-size: 1rem;
   line-height: 1.4;
+  color: #fff; /* Text color */
 }
 
 /* Join Us Section */
