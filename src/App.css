@@ -1,3 +1,306 @@
+html {
+  scroll-padding-top: 80px; /* Adjust this value to match your header's height */
+}
+
+header {
+  height: 80px; /* Ensure this matches the scroll-padding-top value */
+}
+
+/* Section Styling */
+section {
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+/* About Section */
+#about {
+  background: linear-gradient(to bottom, #243b55, #141e30);
+  color: #fff;
+}
+
+#about h2,
+#about p {
+  margin-bottom: 1rem;
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  color: #fdbb2d;
+}
+
+/* Achievements Section */
+#achievements {
+  background: linear-gradient(to bottom, #1a2a6c, #243b55);
+  color: #fff;
+}
+
+#achievements h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fdbb2d;
+}
+
+.achievements-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.achievement {
+  width: 300px;
+  padding: 1rem;
+  background: #1a2a6c;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.achievement img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.achievement h3 {
+  margin: 1rem 0 0.5rem;
+  color: #fdbb2d; /* Title color */
+}
+
+.achievement p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #fff; /* Text color */
+}
+
+.achievement a {
+  position: relative;
+  display: block; /* Ensure links cover the entire achievement block */
+  width: 100%;
+  height: 100%;
+  text-decoration: none; /* Remove underline */
+  z-index: 1;
+}
+
+.achievement a:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+/* Link Styling */
+a {
+  color: #fff; /* White color for all links */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  color: #fdbb2d; /* Change color on hover */
+}
+
+/* Join Us Section */
+#join {
+  background: linear-gradient(to bottom, #243b55, #141e30);
+}
+
+#join h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #fdbb2d;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #141e30, #243b55);
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header Section */
+header {
+  background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fdbb2d);
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+}
+
+header ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #fdbb2d;
+  bottom: -3px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+header ul li a:hover::after {
+  width: 100%;
+}
+
+.header-logo {
+  vertical-align: middle;
+  filter: invert(1) brightness(2);
+  max-width: 150px; /* Adjust to fit better on mobile */
+  height: auto;
+}
+
+/* Hamburger Menu */
+.mobile-menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.mobile-menu-icon .line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center; /* Center the icons */
+  align-items: center; /* Align icons vertically */
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #fdbb2d;
+  transform: scale(1.2);
+}
+
+.social-icons img {
+  width: 24px; /* Adjust to fit better */
+  height: 24px; /* Adjust to fit better */
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url('/public/bg.jpg') no-repeat center center/cover;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: white;
+  animation: slideIn 1s ease-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .logo-container {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .header-logo {
+    width: 50%;  /* Adjusted to fit better on mobile */
+    height: auto;
+  }
+
+  .mobile-menu-icon {
+    display: flex;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul.mobile-menu-open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Add background for better visibility */
+    padding: 10px;
+    border-radius: 10px;
+    list-style: none;
+    width: 80%;  /* Ensure the menu fits within the screen */
+    margin: 0 auto;  /* Center the menu */
+  }
+
+  nav ul li {
+    width: 100%; /* Ensure each item takes up the full width */
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    display: block; /* Ensure the link takes up the full width */
+    text-align: center; /* Center the text */
+  }
+
+  nav ul li a:hover {
+    background: #fdbb2d;
+    border-radius: 5px;
+    color: #141e30;
+  }
+}
+
+@media (min-width: 769px) {
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+  }
+}
+
 /* Instagram Embed Styling */
 .instagram-posts {
   display: flex;
@@ -35,6 +338,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.instagram-media a > div > div {
+  background-color: #F4F4F4;
+  border-radius: 50%;
+  flex-grow: 0;
+  height: 40px;
+  margin-right: 14px;
+  width: 40px;
 }
 .instagram-media a > div > div {
   background-color: #F4F4F4;
