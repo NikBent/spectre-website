@@ -149,6 +149,8 @@ header ul li a:hover::after {
 /* Social Icons */
 .social-icons {
   display: flex;
+  justify-content: center; /* Center the icons */
+  align-items: center; /* Align icons vertically */
   gap: 1rem;
 }
 
