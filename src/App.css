@@ -323,11 +323,9 @@ header ul li a:hover::after {
   width: -webkit-calc(100% - 2px);
   width: calc(100% - 2px);
 }
-
 .instagram-media > div {
   padding: 16px;
 }
-
 .instagram-media a {
   background: #FFFFFF;
   line-height: 0;
@@ -336,13 +334,11 @@ header ul li a:hover::after {
   text-decoration: none;
   width: 100%;
 }
-
 .instagram-media a > div {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
 .instagram-media a > div > div {
   background-color: #F4F4F4;
   border-radius: 50%;
@@ -351,7 +347,6 @@ header ul li a:hover::after {
   margin-right: 14px;
   width: 40px;
 }
-
 .instagram-media a > div > div + div {
   display: flex;
   flex-direction: column;
@@ -393,9 +388,7 @@ header ul li a:hover::after {
   font-weight: 550;
   line-height: 18px;
 }
-.instagram-media div[style*="padding: 12.5% 0"] {
-  padding: 12.5% 0;
-}
+
 .instagram-media div[style*="display: flex"] {
   display: flex;
   flex-direction: row;
