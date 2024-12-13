@@ -66,11 +66,13 @@ function App() {
                 </nav>
             </header>
 
-            {/* Hero Section */}
+            {/* Hero Section with Video Background */}
             <section id="hero" className="hero">
-                <div className="logo-container">
-                    <img src="/spectre.png" alt="Spectre Logo" className="header-logo" />
-                    <h1>SPECTRE UMN</h1>
+                <video autoPlay loop muted className="background-video">
+                    <source src="C:\Users\alexa\Downloads\BG.mp4"type="video/mp4" />
+                </video>
+                <div className="logo-overlay">
+                    <img src="/spectre.png" alt="Spectre Logo" className="hero-logo" />
                 </div>
             </section>
 
