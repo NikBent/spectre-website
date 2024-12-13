@@ -69,28 +69,33 @@ function App() {
                     Nama Spectre tidak asing lagi di dunia perfilman, UKM ini telah berada di bawah naungan tim Ultimate Stunt Fighter yang sudah masuk ke dalam industri perfilman tingkat tinggi dan anggotanya pun telah bermain di film-film seperti The Raid, The Night Come From Us dan Gundala sehingga, koneksi untuk menyalurkan para anggota ke dunia perfilman tidak lah perlu diragukan.
                 </p>
             </section>
-
-            {/* Achievements Section */}
-            <section id="achievements">
-                <h2>Our Achievements</h2>
-                <div className="achievements-grid">
-                    <div className="achievement">
-                        <img src="/TheRaid.jpg" alt="The Raid Movie Poster" />
-                        <h3>The Raid</h3>
-                        <p>Collaborated as stunt crew for the globally acclaimed movie *The Raid*.</p>
-                    </div>
-                    <div className="achievement">
-                        <img src="/Gundala.jpg" alt="Gundala Movie Poster" />
-                        <h3>Gundala</h3>
-                        <p>Played a pivotal role in crafting stunt sequences for *Gundala*.</p>
-                    </div>
-                    <div className="achievement">
-                        <img src="/TheNight.jpg" alt="The Night Comes for Us Movie Poster" />
-                        <h3>The Night Comes for Us</h3>
-                        <p>Part of the dynamic action team for *The Night Comes for Us*.</p>
-                    </div>
-                </div>
-            </section>
+    {/* Achievements Section */}
+<section id="achievements">
+    <h2>Our Achievements</h2>
+    <div className="achievements-grid">
+        <div className="achievement">
+            <a href="https://www.imdb.com/title/tt1899353/" target="_blank" rel="noopener noreferrer">
+                <img src="/TheRaid.jpg" alt="The Raid Movie Poster" />
+                <h3>The Raid</h3>
+                <p>Collaborated as stunt crew for the globally acclaimed movie The Raid.</p>
+            </a>
+        </div>
+        <div className="achievement">
+            <a href="https://www.imdb.com/title/tt8237172/" target="_blank" rel="noopener noreferrer">
+                <img src="/Gundala.jpg" alt="Gundala Movie Poster" />
+                <h3>Gundala</h3>
+                <p>Played a pivotal role in crafting stunt sequences for Gundala.</p>
+            </a>
+        </div>
+        <div className="achievement">
+            <a href="https://www.imdb.com/title/tt6116856/" target="_blank" rel="noopener noreferrer">
+                <img src="/TheNight.jpg" alt="The Night Comes for Us Movie Poster" />
+                <h3>The Night Comes for Us</h3>
+                <p>Part of the dynamic action team for The Night Comes for Us.</p>
+            </a>
+        </div>
+    </div>
+</section>
 
             {/* Footer */}
             <footer>
