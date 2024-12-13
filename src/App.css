@@ -221,10 +221,12 @@ header ul li a:hover::after {
     padding: 10px;
     border-radius: 10px;
     list-style: none;
+    width: 80%;  /* Ensure the menu fits within the screen */
+    margin: 0 auto;  /* Center the menu */
   }
 
   nav ul li {
-    margin: 5px 0;
+    width: 100%; /* Ensure each item takes up the full width */
   }
 
   nav ul li a {
@@ -232,6 +234,8 @@ header ul li a:hover::after {
     padding: 10px 20px;
     color: white;
     text-decoration: none;
+    display: block; /* Ensure the link takes up the full width */
+    text-align: center; /* Center the text */
   }
 
   nav ul li a:hover {
