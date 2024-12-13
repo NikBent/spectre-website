@@ -91,7 +91,7 @@ function App() {
                 <div className="instagram-posts">
                     <blockquote className="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C57MT3LS7Tn/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
                     <blockquote className="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C7RSAWEyfTs/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
-                    <blockquote className="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/POST_ID_3/" data-instgrm-version="14"></blockquote>
+                    <blockquote className="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C6A4_N7rP5o/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
                 </div>
             </section>
 
