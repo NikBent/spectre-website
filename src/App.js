@@ -74,6 +74,7 @@ function App() {
                 </video>
                 <div className="logo-overlay">
                     <img src="/spectre.png" alt="Spectre Logo" className="hero-logo" />
+                    <h1>SPECTRE UMN</h1>
                 </div>
             </section>
 
