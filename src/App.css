@@ -306,7 +306,7 @@ header ul li a:hover::after {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem; /* Adjust gap as needed */
   margin: 2rem 0;
 }
 
@@ -316,16 +316,16 @@ header ul li a:hover::after {
   border-radius: 3px;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
   margin: 1px;
-  max-width: 540px;
-  min-width: 326px;
+  max-width: 250px; /* Adjust width as needed */
+  min-width: 250px; /* Adjust width as needed */
   padding: 0;
-  width: 99.375%;
-  width: -webkit-calc(100% - 2px);
-  width: calc(100% - 2px);
+  width: 100%;
 }
+
 .instagram-media > div {
-  padding: 16px;
+  padding: 8px; /* Adjust padding as needed */
 }
+
 .instagram-media a {
   background: #FFFFFF;
   line-height: 0;
@@ -334,19 +334,22 @@ header ul li a:hover::after {
   text-decoration: none;
   width: 100%;
 }
+
 .instagram-media a > div {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 .instagram-media a > div > div {
   background-color: #F4F4F4;
   border-radius: 50%;
   flex-grow: 0;
-  height: 40px;
-  margin-right: 14px;
-  width: 40px;
+  height: 20px; /* Adjust height as needed */
+  margin-right: 8px; /* Adjust margin as needed */
+  width: 20px; /* Adjust width as needed */
 }
+
 .instagram-media a > div > div + div {
   display: flex;
   flex-direction: column;
@@ -357,135 +360,137 @@ header ul li a:hover::after {
   background-color: #F4F4F4;
   border-radius: 4px;
   flex-grow: 0;
-  height: 14px;
-  margin-bottom: 6px;
-  width: 100px;
+  height: 7px; /* Adjust height as needed */
+  margin-bottom: 3px; /* Adjust margin as needed */
+  width: 50px; /* Adjust width as needed */
 }
 .instagram-media a > div > div + div > div + div {
   background-color: #F4F4F4;
   border-radius: 4px;
   flex-grow: 0;
-  height: 14px;
-  width: 60px;
+  height: 7px; /* Adjust height as needed */
+  width: 30px; /* Adjust width as needed */
 }
 .instagram-media div[style*="padding: 19% 0"] {
   padding: 19% 0;
 }
 .instagram-media div[style*="display:block; height:50px"] {
   display: block;
-  height: 50px;
-  margin: 0 auto 12px;
-  width: 50px;
+  height: 25px; /* Adjust height as needed */
+  margin: 0 auto 6px; /* Adjust margin as needed */
+  width: 25px; /* Adjust width as needed */
 }
 .instagram-media div[style*="padding-top: 8px"] {
-  padding-top: 8px;
+  padding-top: 4px; /* Adjust padding as needed */
 }
 .instagram-media div[style*="color:#3897f0"] {
   color: #3897f0;
   font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 10px; /* Adjust font size as needed */
   font-style: normal;
   font-weight: 550;
-  line-height: 18px;
+  line-height: 12px;
 }
-
+.instagram-media div[style*="padding: 12.5% 0"] {
+  padding: 6.25% 0; /* Adjust padding as needed */
+}
 .instagram-media div[style*="display: flex"] {
   display: flex;
   flex-direction: row;
-  margin-bottom: 14px;
+  margin-bottom: 7px; /* Adjust margin as needed */
   align-items: center;
 }
 .instagram-media div[style*="display: flex"] > div {
   background-color: #F4F4F4;
   border-radius: 50%;
-  height: 12.5px;
-  width: 12.5px;
-  transform: translateX(0px) translateY(7px);
+  height: 6.25px; /* Adjust height as needed */
+  width: 6.25px; /* Adjust width as needed */
+  transform: translateX(0px) translateY(3.5px);
 }
 .instagram-media div[style*="display: flex"] > div + div {
   background-color: #F4F4F4;
-  height: 12.5px;
-  transform: rotate(-45deg) translateX(3px) translateY(1px);
-  width: 12.5px;
+  height: 6.25px; /* Adjust height as needed */
+  transform: rotate(-45deg) translateX(1.5px) translateY(0.5px);
+  width: 6.25px; /* Adjust width as needed */
   flex-grow: 0;
-  margin-right: 14px;
-  margin-left: 2px;
+  margin-right: 7px; /* Adjust margin as needed */
+  margin-left: 1px; /* Adjust margin as needed */
 }
 .instagram-media div[style*="display: flex"] > div + div + div {
   background-color: #F4F4F4;
   border-radius: 50%;
-  height: 12.5px;
-  width: 12.5px;
-  transform: translateX(9px) translateY(-18px);
+  height: 6.25px; /* Adjust height as needed */
+  width: 6.25px; /* Adjust width as needed */
+  transform: translateX(4.5px) translateY(-9px);
 }
 .instagram-media div[style*="margin-left: 8px"] {
-  margin-left: 8px;
+  margin-left: 4px; /* Adjust margin as needed */
 }
 .instagram-media div[style*="margin-left: 8px"] > div {
   background-color: #F4F4F4;
   border-radius: 50%;
   flex-grow: 0;
-  height: 20px;
-  width: 20px;
+  height: 10px; /* Adjust height as needed */
+  width: 10px; /* Adjust width as needed */
 }
 .instagram-media div[style*="margin-left: 8px"] > div + div {
   width: 0;
   height: 0;
-  border-top: 2px solid transparent;
-  border-left: 6px solid #f4f4f4;
-  border-bottom: 2px solid transparent;
-  transform: translateX(16px) translateY(-4px) rotate(30deg);
+  border-top: 1px solid transparent;
+  border-left: 3px solid #f4f4f4;
+  border-bottom: 1px solid transparent;
+  transform: translateX(8px) translateY(-2px) rotate(30deg);
 }
 .instagram-media div[style*="margin-left: auto"] {
   margin-left: auto;
 }
 .instagram-media div[style*="margin-left: auto"] > div {
   width: 0;
-  border-top: 8px solid #F4F4F4;
-  border-right: 8px solid transparent;
-  transform: translateY(16px);
+  border-top: 4px solid #F4F4F4;
+  border-right: 4px solid transparent;
+  transform: translateY(8px);
 }
 .instagram-media div[style*="margin-left: auto"] > div + div {
   background-color: #F4F4F4;
   flex-grow: 0;
-  height: 12px;
-  width: 16px;
-  transform: translateY(-4px);
+  height: 6px; /* Adjust height as needed */
+  width: 8px; /* Adjust width as needed */
+  transform: translateY(-2px);
 }
 .instagram-media div[style*="margin-left: auto"] > div + div + div {
   width: 0;
   height: 0;
-  border-top: 8px solid #F4F4F4;
-  border-left: 8px solid transparent;
-  transform: translateY(-4px) translateX(8px);
+  border-top: 4px solid #F4F4F4;
+  border-left: 4px solid transparent;
+  transform: translateY(-2px) translateX(4px);
 }
 .instagram-media div[style*="padding: 12.5% 0"] {
-  padding: 12.5% 0;
+  padding: 6.25% 0; /* Adjust padding as needed */
 }
 .instagram-media div[style*="padding: 12.5% 0"] > div {
   background-color: #F4F4F4;
   border-radius: 4px;
   flex-grow: 0;
-  height: 14px;
-  margin-bottom: 6px;
-  width: 224px;
+  height: 7px; /* Adjust height as needed */
+  margin-bottom: 3px; /* Adjust margin as needed */
+  width: 112px; /* Adjust width as needed */
 }
 .instagram-media div[style*="padding: 12.5% 0"] > div + div {
   background-color: #F4F4F4;
   border-radius: 4px;
   flex-grow: 0;
-  height: 14px;
-  width: 144px;
+  height: 7px; /* Adjust height as needed */
+  width: 72px; /* Adjust width as needed */
 }
 .instagram-media p {
   color: #c9c8cd;
   font-family: Arial, sans-serif;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 10px; /* Adjust font size as needed */
+  line-height: 12px;
   margin-bottom: 0;
-  margin-top: 8px;
+  margin-top: 4px; /* Adjust margin as needed */
   overflow: hidden;
-  padding: 8px 0 7px;
+  padding: 4px 0 3.5px; /* Adjust padding as needed */
   text-align: center;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -493,9 +498,9 @@ header ul li a:hover::after {
 .instagram-media p a {
   color: #c9c8cd;
   font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 10px; /* Adjust font size as needed */
   font-style: normal;
   font-weight: normal;
-  line-height: 17px;
+  line-height: 12px;
   text-decoration: none;
 }
