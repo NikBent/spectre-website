@@ -72,7 +72,16 @@ section {
 }
 
 .achievement a {
-  text-decoration: none; /* Ensure links have no underline */
+  position: relative;
+  display: block; /* Ensure links cover the entire achievement block */
+  width: 100%;
+  height: 100%;
+  text-decoration: none; /* Remove underline */
+  z-index: 1;
+}
+
+.achievement a:hover {
+  text-decoration: none; /* Ensure no underline on hover */
 }
 
 /* Link Styling */
