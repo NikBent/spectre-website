@@ -240,7 +240,7 @@ header ul li a:hover::after {
 .hero-logo {
   max-width: 200px; /* Adjust size as needed */
   width: 100%;
-  filter: none; /* Ensure logo is not inverted */
+  filter: invert(1); /* Ensure logo is white */
 }
 
 .hero h1 {
@@ -547,4 +547,3 @@ header ul li a:hover::after {
   line-height: 12px;
   text-decoration: none;
 }
-
