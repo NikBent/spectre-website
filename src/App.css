@@ -71,6 +71,16 @@ section {
   color: #fff; /* Text color */
 }
 
+/* Link Styling */
+a {
+  color: #fff; /* White color for all links */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  color: #fdbb2d; /* Change color on hover */
+}
+
 /* Join Us Section */
 #join {
   background: linear-gradient(to bottom, #243b55, #141e30);
