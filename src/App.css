@@ -16,17 +16,175 @@ section {
 #about {
   background: linear-gradient(to bottom, #243b55, #141e30);
   color: #fff;
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: center;
+  margin: 20px;
 }
 
 #about h2,
 #about p {
+  font-size: 1.25rem;
   margin-bottom: 1rem;
 }
 
 #about h2 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   color: #fdbb2d;
 }
+
+/* Container for the columns */
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  color: #fff;
+}
+
+/* Left column: Motto */
+.about-motto {
+  width: 45%;
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #fff;
+}
+
+/* Right column: Text */
+.about-text {
+  width: 45%;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #fff;
+  text-align: justify;
+}
+
+#about-full {
+  display: none;
+  margin-top: 10px;
+}
+
+#about-full.visible {
+  display: block;
+}
+
+.about-text button {
+  margin-top: 10px;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.about-text button:hover {
+  background-color: #e63e00;
+}
+
+/* About Us Popup Button */
+.about-popup-button {
+  margin: 10px 0;
+  padding: 10px 20px;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.about-popup-button:hover {
+  background-color: #e63e00;
+}
+
+/* Pop-Up Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Pop-Up Menu */
+.popup-menu {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  overflow-y: auto;
+  max-height: 80%;
+}
+
+/* Close Button */
+.close-popup-button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.close-popup-button:hover {
+  background-color: #555;
+}
+
+/* Pop-Up Content */
+.popup-content {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Hide "Read More" button and always display full text on larger screens */
+@media (min-width: 768px) {
+  #about-full {
+      display: block !important; /* Always show full text */
+  }
+  #toggle-menu {
+      display: none; /* Hide the button */
+  }
+}
+
+/* Default styles for mobile */
+#about-full.hidden {
+  display: none;
+}
+
+#about-full.visible {
+  display: block;
+}
+
+.mobile-only {
+  display: block; /* Button visible on mobile */
+  margin-top: 10px;
+  background-color: #ff4500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.mobile-only:hover {
+  background-color: #e63e00;
+}
+
 
 /* Achievements Section */
 #achievements {
@@ -44,6 +202,7 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
@@ -53,16 +212,24 @@ section {
   background: #1a2a6c;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .achievement img {
   max-width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 
 .achievement h3 {
+  font-size: 1.5rem;
   margin: 1rem 0 0.5rem;
   color: #fdbb2d; /* Title color */
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .achievement p {
@@ -80,11 +247,15 @@ section {
   z-index: 1;
 }
 
+.achievement:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}
+
 .achievement a:hover {
   text-decoration: none; /* Ensure no underline on hover */
 }
 
-/* Link Styling */
 a {
   color: #fff; /* White color for all links */
   text-decoration: none; /* Remove underline */
@@ -144,7 +315,7 @@ header ul li a {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 700;
   position: relative;
 }
 
@@ -166,8 +337,9 @@ header ul li a:hover::after {
 .header-logo {
   vertical-align: middle;
   filter: invert(1) brightness(2);
-  max-width: 150px; /* Adjust to fit better on mobile */
+  max-width: 100px; /* Adjust to fit better on mobile */
   height: auto;
+  margin-top: 10px;
 }
 
 /* Hamburger Menu */
@@ -206,8 +378,8 @@ header ul li a:hover::after {
 }
 
 .social-icons img {
-  width: 24px; /* Adjust to fit better */
-  height: 24px; /* Adjust to fit better */
+  width: 40px; /* Adjust to fit better */
+  height: 40px; /* Adjust to fit better */
 }
 
 /* Hero Section */
@@ -229,6 +401,18 @@ header ul li a:hover::after {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+
+/* Darker Dim overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Increased opacity for a darker effect */
+  z-index: 0;
 }
 
 .logo-overlay {
@@ -264,26 +448,42 @@ header ul li a:hover::after {
   .mobile-menu-icon {
     display: flex;
   }
-
+  
   nav ul {
     display: none;
   }
-
+  
   nav ul.mobile-menu-open {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.5); /* Add background for better visibility */
-    padding: 10px;
-    border-radius: 10px;
+    align-items: flex-start; /* Align items to the start */
+    background: rgba(0, 0, 0, 0.9); /* Darker background for better visibility */
+    padding: 20px;
+    margin: 0; /* Remove extra margin */
+    border-radius: 10px; /* Add some rounded corners */
     list-style: none;
-    width: 80%;  /* Ensure the menu fits within the screen */
-    margin: 0 auto;  /* Center the menu */
+    width: 50vw; /* Set the width to 80% of the viewport */
+    height: auto; /* Let the height adjust to the content */
+    max-height: 90vh; /* Limit height and allow scrolling if content is too long */
+    overflow-y: auto; /* Enable vertical scrolling for overflow */
+    position: absolute; /* Use absolute positioning to align with the menu icon */
+    top: 100%; /* Position it slightly lower than the top */
+    right: 10px; /* Align it to the right side */
+    z-index: 1000; /* Ensure it appears above other elements */
   }
-
+  
   nav ul li {
     width: 100%; /* Ensure each item takes up the full width */
+    padding: 10px 0; /* Add spacing between menu items */
+    text-align: center; /* Center text inside each menu item */
   }
+  
+  nav ul li a {
+    color: white; /* Make links visible */
+    text-decoration: none;
+    font-size: 18px; /* Adjust font size for readability */
+  }
+  
 
   nav ul li a {
     font-size: 1.2rem;
@@ -321,7 +521,12 @@ header ul li a:hover::after {
   }
 }
 
-/* Instagram Embed Styling */
+#expect {
+  font-size: 2.5rem;
+  margin: 1rem 0 0.5rem;
+  color: #fdbb2d;
+}
+
 .instagram-posts {
   display: flex;
   justify-content: center;
@@ -546,4 +751,22 @@ header ul li a:hover::after {
   font-weight: normal;
   line-height: 12px;
   text-decoration: none;
+}
+
+#footer {
+  background: linear-gradient(to bottom, #0d1115, #141e30);
+  color: #fff;
+  padding: 2rem 1rem; /* Space around the footer */
+  text-align: center; /* Center-align text */
+  font-size: 0.9rem; /* Slightly smaller text for footer */
+}
+
+.footer-section {
+    align-items: center; /* Vertically align items */
+    gap: 1rem; /* Space between sections */
+    margin-top: 1rem; /* Add spacing between sections */
+}
+
+.footer-section p {
+  margin-bottom: 50px;
 }

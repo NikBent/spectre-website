@@ -3,9 +3,20 @@ import "./App.css";
 
 function App() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+    
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
+    
+        if (!isMobileMenuOpen) {
+            const aboutFull = document.getElementById("about-full");
+            aboutFull.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
+    const [isAboutPopupOpen, setIsAboutPopupOpen] = useState(false);
+
+    const toggleAboutPopup = () => {
+        setIsAboutPopupOpen(!isAboutPopupOpen);
     };
 
     useEffect(() => {
@@ -59,7 +70,8 @@ function App() {
                     </div>
                     <ul className={`nav-links ${isMobileMenuOpen ? "mobile-menu-open" : ""}`}>
                         <li><a href="#hero">Home</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="expect">What to Expect</a></li>
                         <li><a href="#achievements">Achievements</a></li>
                         <li><a href="#join">Join Us</a></li>
                     </ul>
@@ -81,16 +93,45 @@ function App() {
             {/* About Section */}
             <section id="about">
                 <h2>About Us</h2>
-                <p>We are United,</p>
-                <p>We are Stunt performers,</p>
-                <p>We are Family</p>
-                <p>Spectre adalah Unit Kegiatan Mahasiswa (UKM) yang berfokus di bidang stunt action untuk dunia perfilman. Tujuan dari UKM ini adalah memberikan dan mengasah ilmu yang dibutuhkan oleh para anggota untuk berperforma di dunia perfilman dengan tingkat standar profesional. Ilmu tersebut terdiri dari teknik gerakan menyerang, jatuhan, aksi reaksi dan gun handling yang dicakup dari berbagai macam beladiri. Ketika skill-skill tersebut telah dikuasai, para anggota akan dapat berkarya di bidang perfilman diantaranya adalah menjadi stuntman, fight choreographer, stunt coordinator dan fight director.
-                    Nama Spectre tidak asing lagi di dunia perfilman, UKM ini telah berada di bawah naungan tim Ultimate Stunt Fighter yang sudah masuk ke dalam industri perfilman tingkat tinggi dan anggotanya pun telah bermain di film-film seperti The Raid, The Night Come From Us dan Gundala sehingga, koneksi untuk menyalurkan para anggota ke dunia perfilman tidak lah perlu diragukan.
-                </p>
+                <div className="about-container">
+                    {/* Left Column */}
+                    <div className="about-motto">
+                        <p>We are United,</p>
+                        <p>We are Stunt performers,</p>
+                        <p>We are Family</p>
+                    </div>
+
+                    {/* Right Column */}
+                    <div className="about-text">
+                        <p id="about-preview">Spectre adalah ...</p>
+                        <button className="about-popup-button" onClick={toggleAboutPopup}>
+                            Read More
+                        </button>
+                    </div>
+                </div>
             </section>
 
-            {/* Embed Instagram Posts Below About Us Section */}
-            <section id="instagram">
+            {/* About Us Pop-Up */}
+            {isAboutPopupOpen && (
+                <div className="popup-overlay">
+                    <div className="popup-menu">
+                        <button className="close-popup-button" onClick={toggleAboutPopup}>
+                            Close
+                        </button>
+                        <div className="popup-content">
+                            <p>
+                                Spectre adalah Unit Kegiatan Mahasiswa (UKM) yang berfokus di bidang stunt action untuk dunia perfilman. Tujuan dari UKM ini adalah memberikan dan mengasah ilmu yang dibutuhkan oleh para anggota untuk berperforma di dunia perfilman dengan tingkat standar profesional. Ilmu tersebut terdiri dari teknik gerakan menyerang, jatuhan, aksi reaksi dan gun handling yang dicakup dari berbagai macam beladiri. Ketika skill-skill tersebut telah dikuasai, para anggota akan dapat berkarya di bidang perfilman diantaranya adalah menjadi stuntman, fight choreographer, stunt coordinator dan fight director.
+                            </p>
+                            <p>
+                                Nama Spectre tidak asing lagi di dunia perfilman, UKM ini telah berada di bawah naungan tim Ultimate Stunt Fighter yang sudah masuk ke dalam industri perfilman tingkat tinggi dan anggotanya pun telah bermain di film-film seperti The Raid, The Night Come From Us dan Gundala sehingga, koneksi untuk menyalurkan para anggota ke dunia perfilman tidak lah perlu diragukan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            )}
+
+            {/* Embed Instagram Posts What to Expect Section */}
+            <section id="expect">
                 <h2>What to Expect</h2>
                 <div className="instagram-posts">
                     <blockquote className="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C57MT3LS7Tn/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14"></blockquote>
@@ -131,19 +172,16 @@ function App() {
             <footer>
                 <section id="join" className="footer-section">
                     <h2>Join Us</h2>
-                    <p>Interested in becoming a part of SPECTRE UMN? Contact us or follow our social media for more information!</p>
+                    <h1>Contact us or follow our social media for more information!</h1>
                     <div className="social-icons">
                         <a href="https://line.me/R/ti/g/U5DCuSU9Y2" target="_blank" rel="noopener noreferrer">
                             <img src="/Line_logo.png" alt="Line Icon" className="social-icon" />
-                            Line
                         </a>
                         <a href="https://instagram.com/spectre_umn" target="_blank" rel="noopener noreferrer">
                             <img src="/Instagram_icon.png" alt="Instagram Icon" className="social-icon" />
-                            Instagram
                         </a>
                         <a href="https://www.facebook.com/p/Ultimate-Stunt-Fighters-100064451029954/" target="_blank" rel="noopener noreferrer">
                             <img src="/Facebook_icon.png" alt="Facebook Icon" className="social-icon" />
-                            Facebook
                         </a>
                     </div>
                 </section>
