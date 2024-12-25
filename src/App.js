@@ -71,7 +71,7 @@ function App() {
                     <ul className={`nav-links ${isMobileMenuOpen ? "mobile-menu-open" : ""}`}>
                         <li><a href="#hero">Home</a></li>
                         <li><a href="#about">About Us</a></li>
-                        <li><a href="expect">What to Expect</a></li>
+                        <li><a href="#expect">What to Expect</a></li>
                         <li><a href="#achievements">Achievements</a></li>
                         <li><a href="#join">Join Us</a></li>
                     </ul>
