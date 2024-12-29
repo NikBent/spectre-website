@@ -191,14 +191,14 @@ function App() {
 
                 {/* Copyright Notice */}
                 <section className="copyright-section">
-                    <p>&copy; 2024 Spectre UMN. All rights reserved. | No copyright infringement intended. | All trademarks are property of their respective owners.</p>
-                </section>
-            </footer>
+                <p>&copy; 2024 Spectre UMN. All rights reserved. | No copyright infringement intended. | All trademarks are property of their respective owners.</p>
+            </section>
+        </footer>
 
-            {/* Add Instagram Embed Script */}
-            <script async defer src="//www.instagram.com/embed.js"></script>
-        </>
-    );
+        {/* Add Instagram Embed Script */}
+        <script async defer src="//www.instagram.com/embed.js"></script>
+    </>
+);
 }
 
 export default App;
