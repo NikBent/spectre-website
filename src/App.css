@@ -1,18 +1,16 @@
 html {
-  scroll-padding-top: 80px; /* Adjust this value to match your header's height */
+  scroll-padding-top: 80px;
 }
 
 header {
-  height: 80px; /* Ensure this matches the scroll-padding-top value */
+  height: 80px; 
 }
 
-/* Section Styling */
 section {
   padding: 6rem 2rem;
   text-align: center;
 }
 
-/* About Section */
 #about {
   background: linear-gradient(to bottom, #243b55, #141e30);
   color: #fff;
@@ -32,7 +30,6 @@ section {
   margin-bottom: 1rem;
 }
 
-/* Container for the columns */
 .about-container {
   display: flex;
   justify-content: space-between;
@@ -42,18 +39,16 @@ section {
 }
 
 .about-popup-button {
-  font-size: 0.9rem; /* Adjust button size */
+  font-size: 0.9rem; 
   padding: 8px 16px;
   background-color: #fdbb2d;
 }
 
-/* Close Button */
 .close-popup-button {
   font-size: 0.9rem;
   padding: 8px 16px;
 }
 
-/* Pop-Up Overlay */
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -65,10 +60,9 @@ section {
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  padding: 0; /* Keep centered on all screen sizes */
+  padding: 0; 
 }
 
-/* Pop-Up Menu */
 .popup-menu {
   background-color: white;
   color:#0d1115;
@@ -82,7 +76,6 @@ section {
   max-height: 80%;
 }
 
-/* Close Button */
 .close-popup-button {
   margin-bottom: 20px;
   padding: 10px 20px;
@@ -98,32 +91,28 @@ section {
   background-color: #555;
 }
 
-/* Responsive Design for Mobile */
 @media screen and (max-width: 768px) {
-  /* About Section */
   #about {
-    padding-left: 5px; /* Reduce padding for smaller screens */
+    padding-left: 5px;
     padding-right: 5px;
-    margin: 20px; /* Adjust margin for better centering */
+    margin: 20px; 
   }
 
   #about h2 {
-    font-size: 3rem; /* Slightly smaller heading */
+    font-size: 3rem; 
   }
 
   #about p {
-    font-size: 1rem; /* Adjust text size */
+    font-size: 1rem;
   }
 
-  /* Pop-Up Menu */
   .popup-menu {
-    width: 90%; /* Slightly narrower for mobile */
-    max-width: 400px; /* Limit max width */
+    width: 90%;
+    max-width: 400px; 
   }
 
-  /* About Popup Button */
   .about-popup-button {
-    font-size: 0.9rem; /* Adjust button size */
+    font-size: 0.9rem; 
     padding: 8px 16px;
     background-color: #fdbb2d;
   }
@@ -135,9 +124,6 @@ section {
   }
 }
 
-
-
-/* Achievements Section */
 #achievements {
   background: linear-gradient(to bottom, #1a2a6c, #243b55);
   color: #fff;
@@ -178,7 +164,7 @@ section {
 .achievement h3 {
   font-size: 1.5rem;
   margin: 1rem 0 0.5rem;
-  color: #fdbb2d; /* Title color */
+  color: #fdbb2d;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -186,15 +172,15 @@ section {
 .achievement p {
   font-size: 1rem;
   line-height: 1.4;
-  color: #fff; /* Text color */
+  color: #fff; 
 }
 
 .achievement a {
   position: relative;
-  display: block; /* Ensure links cover the entire achievement block */
+  display: block;
   width: 100%;
   height: 100%;
-  text-decoration: none; /* Remove underline */
+  text-decoration: none; 
   z-index: 1;
 }
 
@@ -204,19 +190,17 @@ section {
 }
 
 .achievement a:hover {
-  text-decoration: none; /* Ensure no underline on hover */
+  text-decoration: none; 
 }
 
 a {
-  color: #fff; /* White color for all links */
-  text-decoration: none; /* Remove underline */
-}
+  color: #fff; 
+  text-decoration: none; 
 
 a:hover {
-  color: #fdbb2d; /* Change color on hover */
+  color: #fdbb2d; 
 }
 
-/* Join Us Section */
 #join {
   background: linear-gradient(to bottom, #243b55, #141e30);
 }
@@ -227,7 +211,6 @@ a:hover {
   color: #fdbb2d;
 }
 
-/* General Reset */
 * {
   margin: 0;
   padding: 0;
@@ -242,7 +225,6 @@ body {
   line-height: 1.6;
 }
 
-/* Header Section */
 header {
   background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fb9507);
   padding: 1rem 2rem;
@@ -288,12 +270,11 @@ header ul li a:hover::after {
 .header-logo {
   vertical-align: middle;
   filter: invert(1) brightness(2);
-  max-width: 100px; /* Adjust to fit better on mobile */
+  max-width: 100px; 
   height: auto;
   margin-top: 10px;
 }
 
-/* Hamburger Menu */
 .mobile-menu-icon {
   display: none;
   flex-direction: column;
@@ -308,11 +289,10 @@ header ul li a:hover::after {
   transition: 0.4s;
 }
 
-/* Social Icons */
 .social-icons {
   display: flex;
-  justify-content: center; /* Center the icons */
-  align-items: center; /* Align icons vertically */
+  justify-content: center; 
+  align-items: center;
   gap: 1rem;
 }
 
@@ -329,11 +309,10 @@ header ul li a:hover::after {
 }
 
 .social-icons img {
-  width: 40px; /* Adjust to fit better */
-  height: 40px; /* Adjust to fit better */
+  width: 40px; 
+  height: 40px; 
 }
 
-/* Hero Section */
 .hero {
   position: relative;
   height: 100vh;
@@ -354,7 +333,6 @@ header ul li a:hover::after {
   z-index: -1;
 }
 
-/* Darker Dim overlay */
 .hero::before {
   content: "";
   position: absolute;
@@ -362,7 +340,7 @@ header ul li a:hover::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Increased opacity for a darker effect */
+  background: rgba(0, 0, 0, 0.7); 
   z-index: 0;
 }
 
@@ -373,18 +351,17 @@ header ul li a:hover::after {
 }
 
 .hero-logo {
-  max-width: 200px; /* Adjust size as needed */
+  max-width: 200px; 
   width: 100%;
-  filter: invert(1); /* Ensure logo is white */
+  filter: invert(1); 
 }
 
 .hero h1 {
   margin-top: 1rem;
   font-size: 3rem;
-  color: white; /* Ensure text color is white */
+  color: white; 
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .logo-container {
     text-align: center;
@@ -392,7 +369,7 @@ header ul li a:hover::after {
   }
 
   .header-logo {
-    width: 50%;  /* Adjusted to fit better on mobile */
+    width: 50%;  
     height: auto;
   }
 
@@ -407,32 +384,32 @@ header ul li a:hover::after {
   nav ul.mobile-menu-open {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align items to the start */
-    background: rgba(0, 0, 0, 0.9); /* Darker background for better visibility */
+    align-items: flex-start; 
+    background: rgba(0, 0, 0, 0.9); 
     padding: 20px;
-    margin: 0; /* Remove extra margin */
-    border-radius: 10px; /* Add some rounded corners */
+    margin: 0;
+    border-radius: 10px; 
     list-style: none;
-    width: 50vw; /* Set the width to 80% of the viewport */
-    height: auto; /* Let the height adjust to the content */
-    max-height: 90vh; /* Limit height and allow scrolling if content is too long */
-    overflow-y: auto; /* Enable vertical scrolling for overflow */
-    position: absolute; /* Use absolute positioning to align with the menu icon */
-    top: 100%; /* Position it slightly lower than the top */
-    right: 10px; /* Align it to the right side */
-    z-index: 1000; /* Ensure it appears above other elements */
+    width: 50vw;
+    height: auto;
+    max-height: 90vh; 
+    overflow-y: auto;
+    position: absolute; 
+    top: 100%; 
+    right: 10px; 
+    z-index: 1000; 
   }
   
   nav ul li {
-    width: 100%; /* Ensure each item takes up the full width */
-    padding: 10px 0; /* Add spacing between menu items */
-    text-align: center; /* Center text inside each menu item */
+    width: 100%; 
+    padding: 10px 0; 
+    text-align: center; 
   }
   
   nav ul li a {
-    color: white; /* Make links visible */
+    color: white;
     text-decoration: none;
-    font-size: 18px; /* Adjust font size for readability */
+    font-size: 18px; 
   }
   
 
@@ -441,8 +418,8 @@ header ul li a:hover::after {
     padding: 10px 20px;
     color: white;
     text-decoration: none;
-    display: block; /* Ensure the link takes up the full width */
-    text-align: center; /* Center the text */
+    display: block; 
+    text-align: center; 
   }
 
   nav ul li a:hover {
@@ -482,7 +459,7 @@ header ul li a:hover::after {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem; /* Adjust gap as needed */
+  gap: 1rem;
   margin: 2rem 0;
 }
 
@@ -492,14 +469,14 @@ header ul li a:hover::after {
   border-radius: 3px;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
   margin: 1px;
-  max-width: 250px; /* Adjust width as needed */
-  min-width: 250px; /* Adjust width as needed */
+  max-width: 250px; 
+  min-width: 250px; 
   padding: 0;
   width: 100%;
 }
 
 .instagram-media > div {
-  padding: 8px; /* Adjust padding as needed */
+  padding: 8px; 
 }
 
 .instagram-media a {
@@ -521,9 +498,9 @@ header ul li a:hover::after {
   background-color: #F4F4F4;
   border-radius: 50%;
   flex-grow: 0;
-  height: 20px; /* Adjust height as needed */
-  margin-right: 8px; /* Adjust margin as needed */
-  width: 20px; /* Adjust width as needed */
+  height: 20px; 
+  margin-right: 8px; 
+  width: 20px; 
 }
 
 .instagram-media a > div > div + div {
@@ -537,17 +514,17 @@ header ul li a:hover::after {
   background-color: #F4F4F4;
   border-radius: 4px;
   flex-grow: 0;
-  height: 7px; /* Adjust height as needed */
-  margin-bottom: 3px; /* Adjust margin as needed */
-  width: 50px; /* Adjust width as needed */
+  height: 7px;
+  margin-bottom: 3px; 
+  width: 50px;
 }
 
 .instagram-media a > div > div + div > div + div {
   background-color: #F4F4F4;
   border-radius: 4px;
   flex-grow: 0;
-  height: 7px; /* Adjust height as needed */
-  width: 30px; /* Adjust width as needed */
+  height: 7px; 
+  width: 30px;
 }
 
 .instagram-media div[style*="padding: 19% 0"] {
@@ -556,71 +533,71 @@ header ul li a:hover::after {
 
 .instagram-media div[style*="display:block; height:50px"] {
   display: block;
-  height: 25px; /* Adjust height as needed */
-  margin: 0 auto 6px; /* Adjust margin as needed */
-  width: 25px; /* Adjust width as needed */
+  height: 25px; 
+  margin: 0 auto 6px; 
+  width: 25px; 
 }
 
 .instagram-media div[style*="padding-top: 8px"] {
-  padding-top: 4px; /* Adjust padding as needed */
+  padding-top: 4px; 
 }
 
 .instagram-media div[style*="color:#3897f0"] {
   color: #3897f0;
   font-family: Arial, sans-serif;
-  font-size: 10px; /* Adjust font size as needed */
+  font-size: 10px; 
   font-style: normal;
   font-weight: 550;
   line-height: 12px;
 }
 
 .instagram-media div[style*="padding: 12.5% 0"] {
-  padding: 6.25% 0; /* Adjust padding as needed */
+  padding: 6.25% 0; 
 }
 
 .instagram-media div[style*="display: flex"] {
   display: flex;
   flex-direction: row;
-  margin-bottom: 7px; /* Adjust margin as needed */
+  margin-bottom: 7px; 
   align-items: center;
 }
 
 .instagram-media div[style*="display: flex"] > div {
   background-color: #F4F4F4;
   border-radius: 50%;
-  height: 6.25px; /* Adjust height as needed */
-  width: 6.25px; /* Adjust width as needed */
+  height: 6.25px; 
+  width: 6.25px;
   transform: translateX(0px) translateY(3.5px);
 }
 
 .instagram-media div[style*="display: flex"] > div + div {
   background-color: #F4F4F4;
-  height: 6.25px; /* Adjust height as needed */
+  height: 6.25px; 
   transform: rotate(-45deg) translateX(1.5px) translateY(0.5px);
-  width: 6.25px; /* Adjust width as needed */
+  width: 6.25px; 
   flex-grow: 0;
-  margin-right: 7px; /* Adjust margin as needed */
-  margin-left: 1px; /* Adjust margin as needed */
+  margin-right: 7px; 
+  margin-left: 1px;
 }
 
 .instagram-media div[style*="display: flex"] > div + div + div {
   background-color: #F4F4F4;
   border-radius: 50%;
-  height: 6.25px; /* Adjust height as needed */
-  width: 6.25px; /* Adjust width as needed */
+  height: 6.25px; 
+  width: 6.25px; 
   transform: translateX(4.5px) translateY(-9px);
 }
 
 .instagram-media div[style*="margin-left: 8px"] {
-  margin-left: 4px; /* Adjust margin as needed */
+  margin-left: 4px; 
 }
 
 .instagram-media div[style*="margin-left: 8px"] > div {
   background-color: #F4F4F4;
   border-radius: 50%;
   flex-grow: 0;
-  height: 10px; /* Adjust height as needed */
-  width: 10px; /* Adjust width as needed */
+  height: 10px; 
+  width: 10px; 
 }
 
 .instagram-media div[style*="margin-left: 8px"] > div + div {
@@ -646,8 +623,8 @@ header ul li a:hover::after {
 .instagram-media div[style*="margin-left: auto"] > div + div {
   background-color: #F4F4F4;
   flex-grow: 0;
-  height: 6px; /* Adjust height as needed */
-  width: 8px; /* Adjust width as needed */
+  height: 6px;
+  width: 8px;
   transform: translateY(-2px);
 }
 
@@ -660,35 +637,35 @@ header ul li a:hover::after {
 }
 
 .instagram-media div[style*="padding: 12.5% 0"] {
-  padding: 6.25% 0; /* Adjust padding as needed */
+  padding: 6.25% 0;
 }
 
 .instagram-media div[style*="padding: 12.5% 0"] > div {
   background-color: #F4F4F4;
   border-radius: 4px;
   flex-grow: 0;
-  height: 7px; /* Adjust height as needed */
-  margin-bottom: 3px; /* Adjust margin as needed */
-  width: 112px; /* Adjust width as needed */
+  height: 7px;
+  margin-bottom: 3px; 
+  width: 112px; 
 }
 
 .instagram-media div[style*="padding: 12.5% 0"] > div + div {
   background-color: #F4F4F4;
   border-radius: 4px;
   flex-grow: 0;
-  height: 7px; /* Adjust height as needed */
-  width: 72px; /* Adjust width as needed */
+  height: 7px;
+  width: 72px; 
 }
 
 .instagram-media p {
   color: #c9c8cd;
   font-family: Arial, sans-serif;
-  font-size: 10px; /* Adjust font size as needed */
+  font-size: 10px;
   line-height: 12px;
   margin-bottom: 0;
-  margin-top: 4px; /* Adjust margin as needed */
+  margin-top: 4px; 
   overflow: hidden;
-  padding: 4px 0 3.5px; /* Adjust padding as needed */
+  padding: 4px 0 3.5px; 
   text-align: center;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -697,7 +674,7 @@ header ul li a:hover::after {
 .instagram-media p a {
   color: #c9c8cd;
   font-family: Arial, sans-serif;
-  font-size: 10px; /* Adjust font size as needed */
+  font-size: 10px; 
   font-style: normal;
   font-weight: normal;
   line-height: 12px;
@@ -707,16 +684,15 @@ header ul li a:hover::after {
 #footer {
   background: linear-gradient(to bottom, #0d1115, #141e30);
   color: #fff;
-  padding: 2rem 1rem; /* Space around the footer */
-  text-align: center; /* Center-align text */
-  font-size: 0.9rem; /* Slightly smaller text for footer */
+  padding: 2rem 1rem;
+  text-align: center; 
+  font-size: 0.9rem; 
 }
 
 .footer-section {
-    align-items: center; /* Vertically align items */
-    gap: 1rem; /* Space between sections */
-    margin-top: 1rem; /* Add spacing between sections */
-}
+    align-items: center; 
+    gap: 1rem; 
+    margin-top: 1rem; 
 
 .footer-section p {
   margin-bottom: 50px;
