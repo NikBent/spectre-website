@@ -682,20 +682,21 @@ header ul li a:hover::after {
 }
 
 #footer {
-  background: linear-gradient(to bottom, #0d1115, #141e30);
-  color: #fff;
-  padding: 2rem 1rem;
-  text-align: center; 
-  font-size: 0.9rem; 
+    background: linear-gradient(to bottom, #0d1115, #141e30);
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center; 
+    font-size: 0.9rem; 
 }
 
 .footer-section {
     align-items: center; 
     gap: 1rem; 
     margin-top: 1rem; 
+}
 
 .footer-section p {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .footer-info {
