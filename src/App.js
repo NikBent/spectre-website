@@ -171,28 +171,29 @@ function App() {
                 </div>
             </section>
 
+            {/* Footer */}
             <footer>
-    <section id="join" className="footer-section">
-        <h2>Join Us</h2>
-        <h1>Contact us or follow our social media for more information!</h1>
-        <div className="social-icons">
-            <a href="https://line.me/R/ti/g/U5DCuSU9Y2" target="_blank" rel="noopener noreferrer">
-                <img src="/Line_logo.png" alt="Line Icon" className="social-icon" />
-            </a>
-            <a href="https://instagram.com/spectre_umn" target="_blank" rel="noopener noreferrer">
-                <img src="/Instagram_icon.png" alt="Instagram Icon" className="social-icon" />
-            </a>
-            <a href="https://www.facebook.com/p/Ultimate-Stunt-Fighters-100064451029954/" target="_blank" rel="noopener noreferrer">
-                <img src="/Facebook_icon.png" alt="Facebook Icon" className="social-icon" />
-            </a>
-        </div>
-    </section>
-    <div className="footer-copyright">
-        <p>
-            &copy; 2024 Spectre UMN. All rights reserved. Trademarks and copyrights belong to their respective owners. No copyright infringement intended.
-        </p>
-    </div>
-</footer>
+                <section id="join" className="footer-section">
+                    <h2>Join Us</h2>
+                    <h1>Contact us or follow our social media for more information!</h1>
+                    <div className="social-icons">
+                        <a href="https://line.me/R/ti/g/U5DCuSU9Y2" target="_blank" rel="noopener noreferrer">
+                            <img src="/Line_logo.png" alt="Line Icon" className="social-icon" />
+                        </a>
+                        <a href="https://instagram.com/spectre_umn" target="_blank" rel="noopener noreferrer">
+                            <img src="/Instagram_icon.png" alt="Instagram Icon" className="social-icon" />
+                        </a>
+                        <a href="https://www.facebook.com/p/Ultimate-Stunt-Fighters-100064451029954/" target="_blank" rel="noopener noreferrer">
+                            <img src="/Facebook_icon.png" alt="Facebook Icon" className="social-icon" />
+                        </a>
+                    </div>
+                </section>
+
+                {/* Copyright Notice */}
+                <section className="copyright-section">
+                    <p>&copy; 2024 Spectre UMN. All rights reserved. | No copyright infringement intended. | All trademarks are property of their respective owners.</p>
+                </section>
+            </footer>
 
             {/* Add Instagram Embed Script */}
             <script async defer src="//www.instagram.com/embed.js"></script>
