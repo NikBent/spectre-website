@@ -697,3 +697,12 @@ header ul li a:hover::after {
 .footer-section p {
   margin-bottom: 50px;
 }
+
+.footer-copyright {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 12px;
+    color: #666; /* Subtle color for less emphasis */
+    text-align: left;
+}
