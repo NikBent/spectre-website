@@ -16,8 +16,8 @@ section {
 #about {
   background: linear-gradient(to bottom, #243b55, #141e30);
   color: #fff;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 400px;
+  padding-right: 400px;
   text-align: center;
   margin: 20px;
 }
@@ -39,6 +39,18 @@ section {
   align-items: flex-start;
   gap: 20px;
   color: #fff;
+}
+
+.about-popup-button {
+  font-size: 0.9rem; /* Adjust button size */
+  padding: 8px 16px;
+  background-color: #fdbb2d;
+}
+
+/* Close Button */
+.close-popup-button {
+  font-size: 0.9rem;
+  padding: 8px 16px;
 }
 
 /* Pop-Up Overlay */
@@ -90,9 +102,9 @@ section {
 @media screen and (max-width: 768px) {
   /* About Section */
   #about {
-    padding-left: 20px; /* Reduce padding for smaller screens */
-    padding-right: 20px;
-    margin: 10px; /* Adjust margin for better centering */
+    padding-left: 80px; /* Reduce padding for smaller screens */
+    padding-right: 80px;
+    margin: 20px; /* Adjust margin for better centering */
   }
 
   #about h2 {
@@ -232,7 +244,7 @@ body {
 
 /* Header Section */
 header {
-  background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fdbb2d);
+  background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fb9507);
   padding: 1rem 2rem;
   position: fixed;
   top: 0;
