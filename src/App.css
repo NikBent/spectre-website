@@ -37,7 +37,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 20px;
+  gap: 50px;
   color: #fff;
 }
 
@@ -102,8 +102,8 @@ section {
 @media screen and (max-width: 768px) {
   /* About Section */
   #about {
-    padding-left: 80px; /* Reduce padding for smaller screens */
-    padding-right: 80px;
+    padding-left: 5px; /* Reduce padding for smaller screens */
+    padding-right: 5px;
     margin: 20px; /* Adjust margin for better centering */
   }
 
