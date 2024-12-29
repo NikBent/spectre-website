@@ -3,17 +3,20 @@ import "./App.css";
 
 function App() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    
+    const [isAboutPopupOpen, setIsAboutPopupOpen] = useState(false);
+
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
-    
+
         if (!isMobileMenuOpen) {
             const aboutFull = document.getElementById("about-full");
-            aboutFull.scrollIntoView({ behavior: "smooth" });
+            if (aboutFull) {
+                aboutFull.scrollIntoView({ behavior: "smooth" });
+            } else {
+                console.error("Element with id 'about-full' not found");
+            }
         }
     };
-
-    const [isAboutPopupOpen, setIsAboutPopupOpen] = useState(false);
 
     const toggleAboutPopup = () => {
         setIsAboutPopupOpen(!isAboutPopupOpen);
