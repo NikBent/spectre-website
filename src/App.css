@@ -698,11 +698,11 @@ header ul li a:hover::after {
   margin-bottom: 50px;
 }
 
-.footer-copyright {
+.footer-info {
     position: absolute;
     bottom: 10px;
     left: 10px;
     font-size: 12px;
-    color: #666; /* Subtle color for less emphasis */
-    text-align: left;
+    color: #aaa;
 }
+
