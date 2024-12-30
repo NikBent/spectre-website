@@ -687,6 +687,7 @@ header ul li a:hover::after {
   padding: 2rem 1rem;
   text-align: center; 
   font-size: 0.9rem; 
+  position: relative;
 }
 
 .footer-section {
@@ -707,3 +708,10 @@ header ul li a:hover::after {
     color: #aaa;
 }
 
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
