@@ -93,26 +93,25 @@ function App() {
                 </div>
             </section>
 
-            {/* About Section */}
-            <section id="about">
-                <h2>About Us</h2>
-                <div className="about-container">
-                    {/* Left Column */}
-                    <div className="about-motto">
-                        <p>We are United,</p>
-                        <p>We are Stunt performers,</p>
-                        <p>We are Family</p>
-                    </div>
+           <section id="about">
+    <h2>About Us</h2>
+    <div className="about-container">
+        {/* Left Column */}
+        <div className="about-motto">
+            <p>We are United,</p>
+            <p>We are Stunt performers,</p>
+            <p>We are Family</p>
+        </div>
 
-                    {/* Right Column */}
-                    <div className="about-text">
-                        <p id="about-preview">Spectre adalah ...</p>
-                        <button className="about-popup-button" onClick={toggleAboutPopup}>
-                            Read More
-                        </button>
-                    </div>
-                </div>
-            </section>
+        {/* Right Column */}
+        <div className="about-text">
+            <p id="about-preview">Spectre adalah ...</p>
+            <button className="about-popup-button" onClick={toggleAboutPopup}>
+                Read More
+            </button>
+        </div>
+    </div>
+</section>
 
             {/* About Us Pop-Up */}
             {isAboutPopupOpen && (
