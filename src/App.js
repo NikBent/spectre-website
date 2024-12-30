@@ -69,7 +69,7 @@ function App() {
                     <div className="mobile-menu-icon" onClick={toggleMobileMenu}>
                         <div className="line"></div>
                         <div className="line"></div>
-                        <div className="line"></div>
+                        <div class="line"></div>
                     </div>
                     <ul className={`nav-links ${isMobileMenuOpen ? "mobile-menu-open" : ""}`}>
                         <li><a href="#hero">Home</a></li>
@@ -93,25 +93,26 @@ function App() {
                 </div>
             </section>
 
-           <section id="about">
-    <h2>About Us</h2>
-    <div className="about-container">
-        {/* Left Column */}
-        <div className="about-motto">
-            <p>We are United,</p>
-            <p>We are Stunt performers,</p>
-            <p>We are Family</p>
-        </div>
+            {/* About Section */}
+            <section id="about">
+                <h2>About Us</h2>
+                <div className="about-container">
+                    {/* Left Column */}
+                    <div className="about-motto">
+                        <p>We are United,</p>
+                        <p>We are Stunt performers,</p>
+                        <p>We are Family</p>
+                    </div>
 
-        {/* Right Column */}
-        <div className="about-text">
-            <p id="about-preview">Spectre adalah ...</p>
-            <button className="about-popup-button" onClick={toggleAboutPopup}>
-                Read More
-            </button>
-        </div>
-    </div>
-</section>
+                    {/* Right Column */}
+                    <div className="about-text">
+                        <p id="about-preview">Spectre adalah ...</p>
+                        <button className="about-popup-button" onClick={toggleAboutPopup}>
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </section>
 
             {/* About Us Pop-Up */}
             {isAboutPopupOpen && (
@@ -170,33 +171,34 @@ function App() {
                 </div>
             </section>
 
+            {/* Footer */}
             <footer id="footer">
-    <section id="join" className="footer-section">
-        <h2>Join Us</h2>
-        <h1>Contact us or follow our social media for more information!</h1>
-        <div className="social-icons">
-            <a href="https://line.me/R/ti/g/U5DCuSU9Y2" target="_blank" rel="noopener noreferrer">
-                <img src="/Line_logo.png" alt="Line Icon" className="social-icon" />
-            </a>
-            <a href="https://instagram.com/spectre_umn" target="_blank" rel="noopener noreferrer">
-                <img src="/Instagram_icon.png" alt="Instagram Icon" className="social-icon" />
-            </a>
-            <a href="https://www.facebook.com/p/Ultimate-Stunt-Fighters-100064451029954/" target="_blank" rel="noopener noreferrer">
-                <img src="/Facebook_icon.png" alt="Facebook Icon" className="social-icon" />
-            </a>
-        </div>
-    </section>
+                <section id="join" className="footer-section">
+                    <h2>Join Us</h2>
+                    <h1>Contact us or follow our social media for more information!</h1>
+                    <div className="social-icons">
+                                        <a href="https://line.me/R/ti/g/U5DCuSU9Y2" target="_blank" rel="noopener noreferrer">
+                    <img src="/Line_logo.png" alt="Line Icon" className="social-icon" />
+                </a>
+                <a href="https://instagram.com/spectre_umn" target="_blank" rel="noopener noreferrer">
+                    <img src="/Instagram_icon.png" alt="Instagram Icon" className="social-icon" />
+                </a>
+                <a href="https://www.facebook.com/p/Ultimate-Stunt-Fighters-100064451029954/" target="_blank" rel="noopener noreferrer">
+                    <img src="/Facebook_icon.png" alt="Facebook Icon" className="social-icon" />
+                </a>
+            </div>
+        </section>
 
-    {/* Copyright Notice */}
-    <section className="footer-info">
-        <p>&copy; 2024 Spectre UMN. All rights reserved. | No copyright infringement intended. | All trademarks are property of their respective owners.</p>
-    </section>
-</footer>
+        {/* Copyright Notice */}
+        <section className="footer-info">
+            <p>&copy; 2024 Spectre UMN. All rights reserved. | No copyright infringement intended. | All trademarks are property of their respective owners.</p>
+        </section>
+    </footer>
 
-        {/* Add Instagram Embed Script */}
-        <script async defer src="//www.instagram.com/embed.js"></script>
-    </>
-);
+    {/* Add Instagram Embed Script */}
+    <script async defer src="//www.instagram.com/embed.js"></script>
+</>
+    );
 }
 
 export default App;
