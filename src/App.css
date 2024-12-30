@@ -14,10 +14,7 @@ section {
 #about {
   background: linear-gradient(to bottom, #243b55, #141e30);
   color: #fff;
-  padding-left: 400px;
-  padding-right: 400px;
   text-align: center;
-  margin: 20px;
 }
 
 #about h2 {
@@ -93,9 +90,7 @@ section {
 
 @media screen and (max-width: 768px) {
   #about {
-    padding-left: 5px;
-    padding-right: 5px;
-    margin: 20px; 
+    padding: 2px;
   }
 
   #about h2 {
@@ -227,7 +222,7 @@ body {
 }
 
 header {
-  background: linear-gradient(90deg, #1a2a6c, #b21f1f, #fb9507);
+  background: linear-gradient(90deg, #0021a3, #750000, #fb7507);
   padding: 1rem 2rem;
   position: fixed;
   top: 0;
