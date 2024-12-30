@@ -189,7 +189,7 @@ function App() {
     </section>
 
     {/* Copyright Notice */}
-    <section className="footer-section">
+    <section className="footer-info">
         <p>&copy; 2024 Spectre UMN. All rights reserved. | No copyright infringement intended. | All trademarks are property of their respective owners.</p>
     </section>
 </footer>
